@@ -1,0 +1,66 @@
+.buttons, .output {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button, .modal-buttons button {
+    margin: 10px;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+}
+  
+.primary-button:active {
+    background-color: #004080;
+}
+
+.secondary-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff; /* Text color matches the button color */
+    background-color: transparent;
+    border: 2px solid #007bff; /* Border matches the button color */
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .secondary-button:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    color: #0056b3; /* Change text color on hover */
+    border-color: #0056b3; /* Change border color on hover */
+  }
+  
+  .secondary-button:active {
+    background-color: #d9d9d9; /* Darker background on click */
+    color: #004080; /* Change text color on click */
+    border-color: #004080; /* Change border color on click */
+  }

@@ -1,0 +1,13 @@
+<main class="main">
+  <div class="buttons">
+    <button (click)="openModal()" class="primary-button button">Open modal</button>
+    <button (click)="reset()" class="secondary-button button">Reset</button>
+  </div>
+  <div class="output">
+    <h2>Output</h2>
+    <p *ngIf="parsedArray.length">Parsed array: {{ unreversedArray }}</p>
+    <p *ngIf="parsedArray.length">Array after reverse: {{ parsedArray }}</p>
+  </div>
+  <app-modal *ngIf="modalOpen" (closeModal)="modalClosed($event)"></app-modal>
+</main>
+
